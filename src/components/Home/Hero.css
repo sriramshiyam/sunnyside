@@ -1,0 +1,39 @@
+#he {
+  background-color: #3ebeff;
+  overflow: hidden;
+  transform: translateY();
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Fraunces", serif;
+  color: white;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  word-spacing: 8px;
+  margin-bottom: 30px;
+  transition: all 0.08s linear;
+}
+
+.arrow {
+  transform: translateX(45%);
+  transition: all 0.08s linear;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,87 @@
+/* font-family: "Fraunces", serif;
+font-family: "Barlow", sans-serif; */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 70vh);
+  width: 100%;
+  overflow: hidden;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.textbox2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.textbox2 p {
+  margin-bottom: 20px;
+  text-align: center;
+  max-width: 60%;
+}
+
+.textbox h3,
+.textbox p {
+  margin-left: 10%;
+}
+
+h3 {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: "Barlow", sans-serif;
+  font-size: 1rem;
+  max-width: 60%;
+  line-height: 1.7;
+  letter-spacing: 1px;
+  word-spacing: 3px;
+}
+
+@media screen and (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 70vh) repeat(2, 80vh);
+  }
+  .textbox {
+    align-items: center;
+    text-align: center;
+  }
+  .box:nth-child(2) {
+    grid-row: 1 / 2;
+  }
+  .textbox h3,
+  .textbox p {
+    margin-left: 0;
+    max-width: 90%;
+  }
+  .textbox h3 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+  }
+  .textbox2 h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .textbox2 p {
+    max-width: 90%;
+  }
+}

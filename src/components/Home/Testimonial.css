@@ -1,0 +1,76 @@
+/* font-family: "Fraunces", serif;
+font-family: "Barlow", sans-serif; */
+.testimonials {
+  text-align: center;
+  margin: 6rem auto;
+}
+
+.test {
+  display: flex;
+  width: 85%;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+.testimonials h3 {
+  font-size: 1.5rem;
+}
+
+.test img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.test p,
+.test h5 {
+  font-family: "Barlow", sans-serif;
+}
+
+.test h4 {
+  font-family: "Fraunces", serif;
+  font-size: 1.5rem;
+  margin-top: 3rem;
+}
+
+.test p,
+h4,
+h5 {
+  margin-bottom: 0;
+}
+
+.test h5 {
+  margin-top: 5px;
+}
+
+.test1,
+.test2,
+.test3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1025px) {
+  .test {
+    width: 95%;
+  }
+  .test p {
+    min-width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .test {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .test2 img,
+  .test3 img {
+    margin-top: 5rem;
+  }
+}

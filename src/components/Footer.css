@@ -1,0 +1,38 @@
+footer {
+  background: hsl(168, 47%, 61%);
+  color: hsl(167, 40%, 24%);
+  height: 30vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+i {
+  margin: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+footer .footer-icons {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+footer .footer-links{
+  margin-top: 1rem;
+}
+
+footer small {
+  margin: 2rem;
+  cursor: pointer;
+  color: hsl(167, 40%, 24%);
+}
+
+@media screen and (max-width: 480px) {
+  footer {
+    height: 35vh;
+  }
+}
